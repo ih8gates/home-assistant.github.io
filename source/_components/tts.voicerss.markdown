@@ -25,7 +25,7 @@ tts:
 
 Configuration variables:
 
-- **api_key** (*Requered*): API Key for use this service.
+- **api_key** (*Required*): API Key for use this service.
 - **language** (*Optional*): The language to use. Defaults to `en-us`.
 - **codec** (*Optional*): Audo codec. Default is 'mp3'.
 - **format** (*Optional*): Audio sample format. Default is '8khz_8bit_mono'
