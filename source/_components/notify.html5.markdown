@@ -72,6 +72,21 @@ Any JSON examples below can be [converted to YAML](https://www.json2yaml.com/) f
 
 Chrome supports notification actions, which are configurable buttons that arrive with the notification and can cause actions on Home Assistant to happen when pressed. You can send [up to 2 actions](https://cs.chromium.org/chromium/src/third_party/WebKit/public/platform/modules/notifications/WebNotificationConstants.h?q=maxActions&sq=package:chromium&dr=CSs&l=14).
 
+**YAML**
+```yaml
+- service: notify.*your_entity_id*
+  data:
+    message: "Anne has arrived home"
+    data:
+      actions:
+        - action: "open"
+          icon: "/static/icons/favicon-192x192.png"
+          title: "title": "Open Home Assistant"
+        - action: "open_door"
+          title: "Open door"
+```
+
+**JSON**
 ```json
 {
   "message": "Anne has arrived home",
